@@ -19,6 +19,7 @@
 		C701242A28529CFF004AF65C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C701242C28529D02004AF65C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C701242F28529D02004AF65C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C7A610A828540CC00063B58F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +54,7 @@
 			children = (
 				C701242828529CFF004AF65C /* WeSplitApp.swift */,
 				C701242A28529CFF004AF65C /* ContentView.swift */,
+				C7A610A828540CC00063B58F /* README.md */,
 				C701242C28529D02004AF65C /* Assets.xcassets */,
 				C701242E28529D02004AF65C /* Preview Content */,
 			);
