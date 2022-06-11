@@ -26,10 +26,14 @@
 
 ### Base app
 
-![wesplit01](screenshots/wesplit01.png)
-![wesplit02](screenshots/wesplit02.png)
+<p float="left">
+    <img src="screenshots/wesplit01.png" alt="WeSplit Base Picture 1" width="341">
+    <img src="screenshots/wesplit02.png" alt="WeSplit Base Picture 2" width="341">
+</p>
 
 ### Challenges
 
-![wesplit-challenge01](screenshots/wesplit-challenge01.png)
-![wesplit-challenge02](screenshots/wesplit-challenge02.png)
+<p float="left">
+    <img src="screenshots/wesplit-challenge01.png" alt="WeSplit Challenge Picture 1" width="341">
+    <img src="screenshots/wesplit-challenge02.png" alt="WeSplit Challenge Picture 2" width="341">
+</p>
