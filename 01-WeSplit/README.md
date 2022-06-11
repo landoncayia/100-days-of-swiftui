@@ -24,5 +24,12 @@
 
 ## Screenshots
 
+### Base app
+
 ![wesplit01](screenshots/wesplit01.png)
 ![wesplit02](screenshots/wesplit02.png)
+
+### Challenges
+
+![wesplit-challenge01](screenshots/wesplit-challenge01.png)
+![wesplit-challenge02](screenshots/wesplit-challenge02.png)
