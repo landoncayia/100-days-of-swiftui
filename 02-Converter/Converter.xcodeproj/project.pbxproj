@@ -36,6 +36,7 @@
 		C75EA52D28566F01004CA4A0 = {
 			isa = PBXGroup;
 			children = (
+				C75EA54728566FAA004CA4A0 /* README.md */,
 				C75EA53828566F01004CA4A0 /* Converter */,
 				C75EA53728566F01004CA4A0 /* Products */,
 			);
@@ -54,7 +55,6 @@
 			children = (
 				C75EA53928566F01004CA4A0 /* ConverterApp.swift */,
 				C75EA53B28566F01004CA4A0 /* ContentView.swift */,
-				C75EA54728566FAA004CA4A0 /* README.md */,
 				C75EA53D28566F03004CA4A0 /* Assets.xcassets */,
 				C75EA53F28566F03004CA4A0 /* Preview Content */,
 			);
