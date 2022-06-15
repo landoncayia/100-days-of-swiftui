@@ -17,6 +17,6 @@ I am posting status updates to my Twitter each week; find that here: https://twi
 
 | Project | Topics | Screenshots |
 | :-- | :-- | :-- |
-| Project 1: WeSplit | Form, NavigationView, @State, Section, Picker, TextField, ForEach | <p float="left"> <img src="01-WeSplit/screenshots/wesplit-challenge01.png" alt="WeSplit Challenge Picture 1" width="150"> <img src="01-WeSplit/screenshots/wesplit-challenge02.png" alt="WeSplit Challenge Picture 2" width="341"> </p> |
+| Project 1: WeSplit | Form, NavigationView, @State, Section, Picker, TextField, ForEach | <p float="left"> <img src="01-WeSplit/screenshots/wesplit-challenge01.png" alt="WeSplit Challenge Picture 1" width="150"> <img src="01-WeSplit/screenshots/wesplit-challenge02.png" alt="WeSplit Challenge Picture 2" width="150"> </p> |
 | Challenge Day: Converter | *No new topics* | <p float="left"> <img src="02-Converter/screenshots/converter01.png" alt="Converter Base Picture 1" width="150"> <img src="02-Converter/screenshots/converter02.png" alt="Converter Base Picture 2" width="150"> </p> |
 | Project 2: Guess the Flag | Stacks, Colors, Frames, Gradients, Buttons, Images, Alerts | <p float="left"> <img src="03-GuessTheFlag/screenshots/guesstheflag-challenge01.png" alt="Guess the Flag Challenge Picture 1" width="150"> <img src="03-GuessTheFlag/screenshots/guesstheflag-challenge02.png" alt="Guess the Flag Challenge Picture 2" width="150"> <img src="03-GuessTheFlag/screenshots/guesstheflag-challenge03.png" alt="Guess the Flag Challenge Picture 3" width="150"> </p> |
