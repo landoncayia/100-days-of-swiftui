@@ -9,31 +9,31 @@
 ## Topics
 
 * VStack, HStack, ZStack
+* Using stacks to arrange views
+* Colors and frames
 * LinearGradient, RadialGradient, AngularGradient
-* Frames and colors
-* Buttons
-* Alerts
+* Buttons and images
+* Showing alert messages
 
 ## Challenges
 
-Challenges will appear here.
+1. Add an @State property to store the user’s score, modify it when they get an answer right or wrong, then display it in the alert and in the score label.
+2. When someone chooses the wrong flag, tell them their mistake in your alert message – something like “Wrong! That’s the flag of France,” for example.
+3. Make the game show only 8 questions, at which point they see a final alert judging their score and can restart the game.
 
 ## Screenshots
 
 ### Base app
 
-Screenshots will appear here.
-
-<!--<p float="left">-->
-<!--    <img src="screenshots/wesplit01.png" alt="WeSplit Base Picture 1" width="341">-->
-<!--    <img src="screenshots/wesplit02.png" alt="WeSplit Base Picture 2" width="341">-->
-<!--</p>-->
+<p float="left">
+    <img src="screenshots/guesstheflag01.png" alt="Guess the Flag Base Picture 1" width="341">
+    <img src="screenshots/guesstheflag02.png" alt="Guess the Flag Base Picture 2" width="341">
+</p>
 
 ### Challenges
 
-Screenshots will appear here.
-
-<!--<p float="left">-->
-<!--    <img src="screenshots/wesplit-challenge01.png" alt="WeSplit Challenge Picture 1" width="341">-->
-<!--    <img src="screenshots/wesplit-challenge02.png" alt="WeSplit Challenge Picture 2" width="341">-->
-<!--</p>-->
+<p float="left">
+    <img src="screenshots/guesstheflag-challenge01.png" alt="Guess the Flag Challenge Picture 1" width="341">
+    <img src="screenshots/guesstheflag-challenge02.png" alt="Guess the Flag Challenge Picture 2" width="341">
+    <img src="screenshots/guesstheflag-challenge03.png" alt="Guess the Flag Challenge Picture 3" width="341">
+</p>

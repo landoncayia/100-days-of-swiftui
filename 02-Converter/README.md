@@ -33,14 +33,11 @@ So, if you chose meters for source unit and feet for output unit, then entered 1
 ### Base app
 
 <p float="left">
-    <img src="screenshots/wesplit01.png" alt="WeSplit Base Picture 1" width="341">
-    <img src="screenshots/wesplit02.png" alt="WeSplit Base Picture 2" width="341">
+    <img src="screenshots/converter01.png" alt="Converter Base Picture 1" width="341">
+    <img src="screenshots/converter02.png" alt="Converter Base Picture 2" width="341">
 </p>
 
 ### Challenges
 
-<p float="left">
-    <img src="screenshots/wesplit-challenge01.png" alt="WeSplit Challenge Picture 1" width="341">
-    <img src="screenshots/wesplit-challenge02.png" alt="WeSplit Challenge Picture 2" width="341">
-</p>
+There are no challenges - this project is already a challenge, and that would be one *challenging* challenge!
 
