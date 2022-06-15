@@ -21,9 +21,9 @@ struct ContentView: View {
         case ("Celsius", "Kelvin"):
             return inputTemp + 273.15
         case ("Fahrenheit", "Celsius"):
-            return inputTemp - 32 * (5 / 9)
+            return (inputTemp - 32) * (5 / 9)
         case ("Fahrenheit", "Kelvin"):
-            return inputTemp - 32 * (5 / 9) + 273.15
+            return (inputTemp - 32) * (5 / 9) + 273.15
         case ("Kelvin", "Fahrenheit"):
             return (inputTemp - 273.15) * (9 / 5) + 32
         case ("Kelvin", "Celsius"):
