@@ -15,7 +15,9 @@
 
 ## Challenges
 
-Challenges will go here when I get to them!
+1. Replace each `VStack` in our form with a `Section`, where the text view is the title of the section. Do you prefer this layout or the `VStack` layout? It's your app - you choose! **I prefer the look of `Sections` rather than `VStacks`, so I will be keeping it that way.**
+2. Replace the “Number of cups” stepper with a `Picker` showing the same range of values.
+3. Change the user interface so that it always shows their recommended bedtime using a nice and large font. You should be able to remove the “Calculate” button entirely.
 
 ## Screenshots
 
@@ -28,10 +30,7 @@ Challenges will go here when I get to them!
 
 ### Challenges
 
-Challenge screenshots will go here once I have completed them!
-
-<!--<p float="left">-->
-<!--    <img src="screenshots/guesstheflag-challenge01.png" alt="Guess the Flag Challenge Picture 1" width="341">-->
-<!--    <img src="screenshots/guesstheflag-challenge02.png" alt="Guess the Flag Challenge Picture 2" width="341">-->
-<!--    <img src="screenshots/guesstheflag-challenge03.png" alt="Guess the Flag Challenge Picture 3" width="341">-->
-<!--</p>-->
+<p float="left">
+    <img src="screenshots/betterrest-challenge01.png" alt="BetterRest Challenge Picture 1" width="341">
+    <img src="screenshots/betterrest-challenge02.png" alt="BetterRest Challenge Picture 2" width="341">
+</p>
