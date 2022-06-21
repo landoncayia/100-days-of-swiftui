@@ -25,7 +25,7 @@
 
 <p float="left">
     <img src="screenshots/betterrest01.png" alt="Better Rest Base Picture 1" width="341">
-    <img src="screenshots/guesstheflag02.png" alt="Better Rest Base Picture 2" width="341">
+    <img src="screenshots/betterrest02.png" alt="Better Rest Base Picture 2" width="341">
 </p>
 
 ### Challenges
