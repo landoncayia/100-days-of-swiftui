@@ -25,3 +25,11 @@ Review of topics presented so far.
 <p float="left">
     <img src="screenshots/rockpaperscissors01.png" alt="Rock Paper Scissors Brain Game Picture 1" width="341">
 </p>
+
+### Modifications
+
+#### 6/22/2022
+
+<p float="left">
+    <img src="screenshots/rockpaperscissors-mod01.png" alt="Rock Paper Scissors Brain Game Modification 1" width="341">
+</p>

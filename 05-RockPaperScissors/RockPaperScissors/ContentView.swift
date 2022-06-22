@@ -20,15 +20,15 @@ import SwiftUI
 //    }
 //}
 
-struct GameText: View {
-    var text: String
-    
-    var body: some View {
-        Text(text)
-            .font(.title)
-            .foregroundColor(.blue)
-    }
-}
+//struct GameText: View {
+//    var text: String
+//
+//    var body: some View {
+//        Text(text)
+//            .font(.title)
+//            .foregroundColor(.blue)
+//    }
+//}
 
 struct ContentView: View {
     let moves = ["Rock", "Paper", "Scissors"]
@@ -42,25 +42,57 @@ struct ContentView: View {
     
     var body: some View {
         ZStack {
-            VStack(spacing: 50) {
-                GameText(text: "Turn \(numberOfTurns) of 10")
-                GameText(text: "Your score: \(playerScore)")
-                GameText(text: "CPU move: \(cpuChoice)")
+            LinearGradient(gradient: Gradient(colors: [.orange, .orange, .white]), startPoint: .top, endPoint: .bottom)
+                .ignoresSafeArea()
+            
+            VStack {
+                Spacer()
                 
-                if shouldWin {
-                    GameText(text: "Your goal is to win.")
-                } else {
-                    GameText(text: "You goal is to lose.")
-                        .foregroundColor(.red)
-                }
+                Text("Turn \(numberOfTurns) of 10")
+                    .font(.title)
+                    .fontWeight(.bold)
+                    .foregroundColor(.blue)
+                Text("Your score: \(playerScore)")
+                    .font(.title)
+                    .fontWeight(.bold)
+                    .foregroundColor(.blue)
                 
-                HStack {
-                    ForEach(0..<3) { number in
-                        Button(moveEmojis[number], action: {moveSelected(moves[number]) })
-                            .font(.system(size: 75))
+                Spacer()
+                
+                VStack(spacing: 50) {
+                    Text("CPU move: \(cpuChoice)")
+                        .font(.title)
+                        .fontWeight(.bold)
+                        .foregroundStyle(.secondary)
+                    
+                    if shouldWin {
+                        Text("Your goal is to win.")
+                            .font(.title)
+                            .fontWeight(.bold)
+                            .foregroundStyle(.secondary)
+                    } else {
+                        Text("You goal is to lose.")
+                            .font(.title)
+                            .fontWeight(.bold)
+                            .foregroundStyle(.secondary)
+                    }
+                    
+                    HStack {
+                        ForEach(0..<3) { number in
+                            Button(moveEmojis[number], action: {moveSelected(moves[number]) })
+                                .font(.system(size: 75))
+                        }
                     }
                 }
+                .frame(maxWidth: .infinity)
+                .padding(20)
+                .background(.thickMaterial)
+                .clipShape(RoundedRectangle(cornerRadius: 20))
+                
+                Spacer()
+                Spacer()
             }
+            .padding()
         }
         .alert("Game Over", isPresented: $showingGameOver) {
             Button("New Game", action: reset)
