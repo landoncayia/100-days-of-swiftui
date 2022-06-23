@@ -9,6 +9,7 @@
 ## Topics
 
 * List
+* UITextChecker
 * onAppear()
 * Bundle
 * fatalError()
