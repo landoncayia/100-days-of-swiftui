@@ -23,10 +23,10 @@ Challenges will go here when I get to them!
 
 ### Base app
 
-<!--<p float="left">-->
-<!--    <img src="screenshots/betterrest01.png" alt="Better Rest Base Picture 1" width="341">-->
-<!--    <img src="screenshots/betterrest02.png" alt="Better Rest Base Picture 2" width="341">-->
-<!--</p>-->
+<p float="left">
+    <img src="screenshots/wordscramble01.png" alt="Word Scramble Base Picture 1" width="341">
+    <img src="screenshots/wordscramble02.png" alt="Word Scramble Base Picture 2" width="341">
+</p>
 
 ### Challenges
 
