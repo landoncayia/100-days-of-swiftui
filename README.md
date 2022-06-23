@@ -9,7 +9,7 @@ I am posting status updates to my Twitter each week; find that here: https://twi
 | Type           | Amount | Completed % |
 | :---           | :---:  |    :---:    |
 | Checkpoints    | 9 /  9 |    100%     |
-| Projects       | 3 / 19 |   26.3%     |
+| Projects       | 5 / 19 |   26.3%     |
 | Milestones     | 1 /  6 |   16.7%     |
 | Challenge Days | 1 /  1 |    100%     |
 
