@@ -17,7 +17,9 @@
 
 ## Challenges
 
-Challenges will go here when I get to them!
+1. Disallow answers that are shorter than three letters or are just our start word.
+2. Add a toolbar button that calls startGame(), so users can restart with a new word whenever they want to.
+3. Put a text view somewhere so you can track and show the player’s score for a given root word. How you calculate score is down to you, but something involving number of words and their letter count would be reasonable.
 
 ## Screenshots
 
@@ -30,7 +32,7 @@ Challenges will go here when I get to them!
 
 ### Challenges
 
-<!--<p float="left">-->
-<!--    <img src="screenshots/betterrest-challenge01.png" alt="BetterRest Challenge Picture 1" width="341">-->
-<!--    <img src="screenshots/betterrest-challenge02.png" alt="BetterRest Challenge Picture 2" width="341">-->
-<!--</p>-->
+<p float="left">
+    <img src="screenshots/wordscramble-challenge01.png" alt="Word Scramble Challenge Picture 1" width="341">
+    <img src="screenshots/wordscramble-challenge02.png" alt="Word Scramble Challenge Picture 2" width="341">
+</p>

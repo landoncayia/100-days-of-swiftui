@@ -16,13 +16,20 @@ struct ContentView: View {
     @State private var errorMessage = ""
     @State private var showingError = false
     
+    @State private var score = 0
+    
     var body: some View {
         NavigationView {
             List {
                 Section {
                     TextField("Enter your word", text: $newWord)
                         .autocapitalization(.none)
+                        .disableAutocorrection(true)
                 }
+                
+                Text("Score: \(score)")
+                    .foregroundColor(.cyan)
+                    .fontWeight(.semibold)
                 
                 Section {
                     ForEach(usedWords, id: \.self) { word in
@@ -36,6 +43,9 @@ struct ContentView: View {
             .navigationTitle(rootWord)
             .onSubmit(addNewWord)
             .onAppear(perform: startGame)
+            .toolbar {
+                Button("New Game", action: startGame)
+            }
             .alert(errorTitle, isPresented: $showingError) {
                 Button("OK", role: .cancel) { }
             } message: {
@@ -46,7 +56,15 @@ struct ContentView: View {
     
     func addNewWord() {
         let answer = newWord.lowercased().trimmingCharacters(in: .whitespacesAndNewlines)
-        guard answer.count > 0 else { return }
+        guard answer.count > 2 else {
+            wordError(title: "Word too short", message: "Your word should be at least three letters!")
+            return
+        }
+        
+        guard answer != rootWord else {
+            wordError(title: "Word same as root word", message: "Come on, you really thought that would work?")
+            return
+        }
         
         guard isOriginal(word: answer) else {
             wordError(title: "Word used already", message: "Be more original!")
@@ -63,6 +81,21 @@ struct ContentView: View {
             return
         }
         
+        switch answer.count {
+        case 3...4:
+            score += 1
+        case 5...6:
+            score += 2
+        case 7:
+            score += 3
+        case 8:
+            score += 5
+        default:
+            // Should not be possible
+            score += 0
+            fatalError("An incorrect number of letters was provided.")
+        }
+        
         withAnimation {
             usedWords.insert(answer, at: 0)
         }
@@ -70,6 +103,7 @@ struct ContentView: View {
     }
     
     func startGame() {
+        usedWords.removeAll()
         if let startWordsURL = Bundle.main.url(forResource: "start", withExtension: "txt") {
             if let startWords = try? String(contentsOf: startWordsURL) {
                 let allWords = startWords.components(separatedBy: "\n")
