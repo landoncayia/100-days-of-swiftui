@@ -27,9 +27,9 @@ struct ContentView: View {
                         .disableAutocorrection(true)
                 }
                 
-                Text("Score: \(score)")
-                    .foregroundColor(.cyan)
+                Text("Score for current word: \(score)")
                     .fontWeight(.semibold)
+                    .foregroundStyle(LinearGradient(gradient: Gradient(colors: [.blue, .green]), startPoint: .leading, endPoint: .trailing))
                 
                 Section {
                     ForEach(usedWords, id: \.self) { word in
