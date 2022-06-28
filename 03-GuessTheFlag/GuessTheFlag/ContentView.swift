@@ -26,8 +26,14 @@ struct ContentView: View {
     
     @State private var countries = ["Estonia", "France", "Germany", "Ireland", "Italy", "Nigeria", "Poland", "Russia", "Spain", "UK", "US"].shuffled()
     @State private var correctAnswer = Int.random(in: 0...2)
-    @State private var lastAnswer = 0
+    @State private var lastFlagTapped = 0
     @State private var questionsAsked = 1
+    
+    @State private var rotationDegrees = 0.0
+    @State private var rotationAnimationAmountsY = [0.0, 0.0, 0.0]
+    @State private var rotationAnimationAmountsX = [0.0, 0.0, 0.0]
+    @State private var opacityValues = [1.0, 1.0, 1.0]
+    @State private var scaleValues = [1.0, 1.0, 1.0]
     
     var body: some View {
         ZStack {
@@ -57,9 +63,17 @@ struct ContentView: View {
                     ForEach(0..<3) { number in
                         Button {
                             flagTapped(number)
+                            
+                            withAnimation {
+                                rotationDegrees += 360
+                            }
                         } label: {
                             FlagImage(country: countries[number])
+                                .opacity(opacityValues[number])
                         }
+                        .rotation3DEffect(.degrees(rotationAnimationAmountsY[number]), axis: (x: 0, y: 1, z: 0))
+                        .rotation3DEffect(.degrees(rotationAnimationAmountsX[number]), axis: (x: 1, y: 0, z: 0))
+                        .scaleEffect(scaleValues[number])
                     }
                 }
                 .frame(maxWidth: .infinity)
@@ -86,7 +100,7 @@ struct ContentView: View {
             Button("Continue", action: askQuestion)
         } message: {
             if scoreTitle == "Wrong" {
-                Text("Wrong! That's the flag of \(countries[lastAnswer])")
+                Text("Wrong! That's the flag of \(countries[lastFlagTapped])")
             }
             Text("Your score is \(score)")
         }
@@ -98,12 +112,28 @@ struct ContentView: View {
     }
     
     func flagTapped(_ number: Int) {
-        lastAnswer = number
+        let flagRotationDuration = 0.5
+        
+        lastFlagTapped = number
         if number == correctAnswer {
             scoreTitle = "Correct"
             score += 1
         } else {
             scoreTitle = "Wrong"
+        }
+        
+        withAnimation(Animation.easeInOut(duration: flagRotationDuration)) {
+            rotationAnimationAmountsY[number] += 360
+        }
+        
+        var flagsNotTapped = [0, 1, 2]
+        flagsNotTapped.remove(at: number)
+        
+        withAnimation {
+            opacityValues[flagsNotTapped[0]] = 0.25
+            opacityValues[flagsNotTapped[1]] = 0.25
+            scaleValues[flagsNotTapped[0]] = 0.5
+            scaleValues[flagsNotTapped[1]] = 0.5
         }
         
         showingScore = true
@@ -116,6 +146,15 @@ struct ContentView: View {
             questionsAsked += 1
             countries.shuffle()
             correctAnswer = Int.random(in: 0...2)
+        }
+        
+        withAnimation {
+            opacityValues = [1.0, 1.0, 1.0]
+            scaleValues = [1.0, 1.0, 1.0]
+        }
+        
+        withAnimation {
+            rotationAnimationAmountsX = rotationAnimationAmountsX.map { $0 + 360 }
         }
     }
     
