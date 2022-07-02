@@ -14,6 +14,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C7A58CFD2870B61E00CA4A2E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C7D440C9286C96DA00C56F77 /* MultiplicationTables.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiplicationTables.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7D440CC286C96DA00C56F77 /* MultiplicationTablesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplicationTablesApp.swift; sourceTree = "<group>"; };
 		C7D440CE286C96DA00C56F77 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -35,6 +36,7 @@
 		C7D440C0286C96DA00C56F77 = {
 			isa = PBXGroup;
 			children = (
+				C7A58CFD2870B61E00CA4A2E /* README.md */,
 				C7D440CB286C96DA00C56F77 /* MultiplicationTables */,
 				C7D440CA286C96DA00C56F77 /* Products */,
 			);
