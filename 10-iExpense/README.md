@@ -25,13 +25,12 @@
 ### Base app
 
 <p float="left">
-    <img src="screenshots/wordscramble01.png" alt="Word Scramble Base Picture 1" width="341">
-    <img src="screenshots/wordscramble02.png" alt="Word Scramble Base Picture 2" width="341">
+    <img src="screenshots/iexpense01.png" alt="iExpense Base Picture 1" width="341">
+    <img src="screenshots/iexpense02.png" alt="iExpense Base Picture 2" width="341">
 </p>
 
 ### Challenges
 
-<!--<p float="left">-->
-<!--    <img src="screenshots/wordscramble-challenge01.png" alt="Word Scramble Challenge Picture 1" width="341">-->
-<!--    <img src="screenshots/wordscramble-challenge02.png" alt="Word Scramble Challenge Picture 2" width="341">-->
-<!--</p>-->
+<p float="left">
+    <img src="screenshots/iexpense-challenge01.png" alt="iExpense Challenge Picture 1" width="341">
+</p>
