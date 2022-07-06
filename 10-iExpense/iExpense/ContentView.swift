@@ -12,56 +12,66 @@ struct ContentView: View {
     @StateObject var expenses = Expenses()
     @State private var showingAddExpense = false
     
-    let expenseTypes = ["Personal", "Business"]
-    
     var currencyFormat: FloatingPointFormatStyle<Double>.Currency {
         .currency(code: Locale.current.currencyCode ?? "USD")
-    }
-    
-    var personalExpenses: Expenses {
-        let temp = Expenses()
-        temp.items = expenses.items.filter { $0.type == "Personal" }
-        return temp
-    }
-    
-    var businessExpenses: Expenses {
-        let temp = Expenses()
-        temp.items = expenses.items.filter { $0.type == "Business" }
-        return temp
     }
     
     var body: some View {
         NavigationView {
             List {
-                ForEach(expenseTypes, id: \.self) { expenseType in
-                    // Don't need id because ExpenseItem comforms to Identifiable
-                    Section(header: Text(expenseType)) {
-                        ForEach(expenses.items.filter { $0.type == expenseType } ) { item in
-                            HStack {
-                                VStack(alignment: .leading) {
-                                    Text(item.name)
-                                        .font(.headline)
-                                    Text(item.type)
-                                }
-                                
-                                Spacer()
-                                
-                                Text(item.amount, format: currencyFormat)
-                                    .foregroundColor(item.color)
+                // Don't need id because ExpenseItem comforms to Identifiable
+                Section(header: Text("Personal Expenses")) {
+                    ForEach(expenses.personalExpenses) { item in
+                        HStack {
+                            VStack(alignment: .leading) {
+                                Text(item.name)
+                                    .font(.headline)
+                                Text(item.type)
                             }
-                        }
-                        .onDelete { idx in
-                            let idsToDelete = idx.map {  }
+                            
+                            Spacer()
+                            
+                            Text(item.amount, format: currencyFormat)
+                                .foregroundColor(item.color)
                         }
                     }
+                    .onDelete(perform: { index in removeItems(at: index, section: 0)})
+                }
+                
+                Section(header: Text("Business Expenses")) {
+                    ForEach(expenses.businessExpenses) { item in
+                        HStack {
+                            VStack(alignment: .leading) {
+                                Text(item.name)
+                                    .font(.headline)
+                                Text(item.type)
+                            }
+                            
+                            Spacer()
+                            
+                            Text(item.amount, format: currencyFormat)
+                                .foregroundColor(item.color)
+                        }
+                    }
+                    .onDelete(perform: { index in removeItems(at: index, section: 1)})
                 }
             }
             .navigationTitle("iExpense")
             .toolbar {
-                Button {
-                    showingAddExpense = true
-                } label: {
-                    Image(systemName: "plus")
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Button {
+                        addSampleExpenses()
+                    } label: {
+                        Text("Sample")
+                    }
+                }
+                
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button {
+                        showingAddExpense = true
+                    } label: {
+                        Image(systemName: "plus")
+                    }
                 }
             }
             .sheet(isPresented: $showingAddExpense) {
@@ -70,8 +80,26 @@ struct ContentView: View {
         }
     }
     
-    func removeItems (at offsets: IndexSet) {
-        
+    func removeItems(at offsets: IndexSet) {
+        expenses.items.remove(atOffsets: offsets)
+    }
+    
+    func removeItems(at offsets: IndexSet, section: Int) {
+        guard let index = offsets.first else { return }
+        if section == 0 {
+            expenses.deleteItem(with: expenses.personalExpenses[index].id)
+        } else {
+            expenses.deleteItem(with: expenses.businessExpenses[index].id)
+        }
+    }
+    
+    func addSampleExpenses() {
+        let sampleItem1 = ExpenseItem(name: "Lunch", type: "Personal", amount: 12.0)
+        let sampleItem2 = ExpenseItem(name: "Beans", type: "Personal", amount: 3.0)
+        let sampleItem3 = ExpenseItem(name: "MacBook Pro", type: "Business", amount: 2400.0)
+        expenses.items.append(sampleItem1)
+        expenses.items.append(sampleItem2)
+        expenses.items.append(sampleItem3)
     }
 }
 
