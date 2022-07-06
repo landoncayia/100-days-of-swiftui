@@ -12,29 +12,49 @@ struct ContentView: View {
     @StateObject var expenses = Expenses()
     @State private var showingAddExpense = false
     
+    let expenseTypes = ["Personal", "Business"]
+    
     var currencyFormat: FloatingPointFormatStyle<Double>.Currency {
         .currency(code: Locale.current.currencyCode ?? "USD")
+    }
+    
+    var personalExpenses: Expenses {
+        let temp = Expenses()
+        temp.items = expenses.items.filter { $0.type == "Personal" }
+        return temp
+    }
+    
+    var businessExpenses: Expenses {
+        let temp = Expenses()
+        temp.items = expenses.items.filter { $0.type == "Business" }
+        return temp
     }
     
     var body: some View {
         NavigationView {
             List {
-                // Don't need id because ExpenseItem comforms to Identifiable
-                ForEach(expenses.items) { item in
-                    HStack {
-                        VStack(alignment: .leading) {
-                            Text(item.name)
-                                .font(.headline)
-                            Text(item.type)
+                ForEach(expenseTypes, id: \.self) { expenseType in
+                    // Don't need id because ExpenseItem comforms to Identifiable
+                    Section(header: Text(expenseType)) {
+                        ForEach(expenses.items.filter { $0.type == expenseType } ) { item in
+                            HStack {
+                                VStack(alignment: .leading) {
+                                    Text(item.name)
+                                        .font(.headline)
+                                    Text(item.type)
+                                }
+                                
+                                Spacer()
+                                
+                                Text(item.amount, format: currencyFormat)
+                                    .foregroundColor(item.color)
+                            }
                         }
-                        
-                        Spacer()
-                        
-                        Text(item.amount, format: currencyFormat)
-                            .foregroundColor(item.color)
+                        .onDelete { idx in
+                            let idsToDelete = idx.map {  }
+                        }
                     }
                 }
-                .onDelete(perform: removeItems)
             }
             .navigationTitle("iExpense")
             .toolbar {
@@ -51,7 +71,7 @@ struct ContentView: View {
     }
     
     func removeItems (at offsets: IndexSet) {
-        expenses.items.remove(atOffsets: offsets)
+        
     }
 }
 
