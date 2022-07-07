@@ -9,8 +9,8 @@ I am posting status updates to my Twitter each week; find that here: https://twi
 | Type           | Amount | Completed % |
 | :---           | :---:  |    :---:    |
 | Checkpoints    | 9 /  9 |    100%     |
-| Projects       | 5 / 19 |   26.3%     |
-| Milestones     | 1 /  6 |   16.7%     |
+| Projects       | 8 / 19 |   42.1%     |
+| Milestones     | 2 /  6 |   33.3%     |
 | Challenge Days | 1 /  1 |    100%     |
 
 ## Projects
@@ -27,3 +27,4 @@ I am posting status updates to my Twitter each week; find that here: https://twi
 | Project 6: Animations | Implicit and explicit animations, binding animations, gesture animations, transitions | |
 | Milestone Project 2: Multiplication Tables Kids' Game | Review of topics covered so far | <p float="left"> <img src="09-MultiplicationTables/screenshots/multiplicationtables01.png" alt="Multiplication Tables Picture" width="150"> </p> |
 | Project 7: iExpense | UserDefaults, Codable, sheet(), onDelete(), @StateObject, @ObservedObject, @Environment | <p float="left"> <img src="10-iExpense/screenshots/iexpense01.png" alt="iExpense Picture" width="150"> </p> |
+| Project 8: Moonshot | NavigationLink, GeometryReader, ScrollView, Codable, Resizing images, Grid layouts | <p float="left"> <img src="11-Moonshot/screenshots/moonshot01.png" alt="Moonshot Picture" width="150"> </p> |
