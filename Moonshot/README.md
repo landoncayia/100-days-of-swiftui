@@ -10,7 +10,12 @@
 
 ## Topics
 
-* 
+* NavigationLink
+* GeometryReader
+* ScrollView
+* Codable
+* Resizing images
+* Grid layouts
 
 ## Challenges
 
@@ -20,12 +25,13 @@
 
 ### Base app
 
-Screenshots will go here eventually.
-
-<!--<p float="left">-->
-<!--    <img src="screenshots/wordscramble01.png" alt="Word Scramble Base Picture 1" width="341">-->
-<!--    <img src="screenshots/wordscramble02.png" alt="Word Scramble Base Picture 2" width="341">-->
-<!--</p>-->
+<p float="left">
+    <img src="screenshots/moonshot01.png" alt="Moonshot Base Picture 1" width="341">
+    <img src="screenshots/moonshot02.png" alt="Moonshot Base Picture 2" width="341">
+    <img src="screenshots/moonshot03.png" alt="Moonshot Base Picture 3" width="341">
+    <img src="screenshots/moonshot04.png" alt="Moonshot Base Picture 4" width="341">
+                
+</p>
 
 ### Challenges
 
