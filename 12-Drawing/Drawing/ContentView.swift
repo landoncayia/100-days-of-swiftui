@@ -22,7 +22,10 @@ struct ContentView: View {
     private let drawings: [DrawingView] = [
         DrawingView("Paths", view: PathView()),
         DrawingView("Shapes", view: ShapeView()),
-        DrawingView("Stroke border support", view: StrokeBorderSupport())
+        DrawingView("Stroke border support", view: StrokeBorderSupport()),
+        DrawingView("CGAffineTransform (flower)", view: CGAffineTransformView()),
+        DrawingView("ImagePaint", view: ImagePaintView()),
+        DrawingView("DrawingGroupView", view: DrawingGroupView())
     ]
     
     var body: some View {
