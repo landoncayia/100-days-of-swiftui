@@ -13,6 +13,8 @@ I am posting status updates to my Twitter each week; find that here: https://twi
 | Milestones     | 2 /  6 |   33.3%     |
 | Challenge Days | 1 /  1 |    100%     |
 
+*Update 7/25/2022: I took a short break for personal reasons, but I am back and ready to begin learning again!*
+
 ## Projects
 
 | Project | Topics | Screenshots |
