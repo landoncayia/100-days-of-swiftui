@@ -8,6 +8,7 @@ The log of my #100DaysOfSwiftUI challenge. Started on Tuesday, June 7, 2022. I d
 
 ### Day 44 - Monday, July 25, 2022
 
+Today, I learned more about SwiftUI drawing. I was astonished to see how big of a difference the Metal API makes when it comes to performance when adding `drawingGroup()` to my code. I am also **especially** excited to learn how to combine animations with drawings. I can envision the way that lots of app developers have created really cool shape animations in their apps, and I want to be able to do the same.
 
 ### Day 45 - Tuesday, July 26, 2022
 
