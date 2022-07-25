@@ -5,6 +5,8 @@ https://www.hackingwithswift.com/100/swiftui
 
 I am posting status updates to my Twitter each week; find that here: https://twitter.com/landoncayia
 
+I am also logging my accomplishments, struggles, and impressions in my log file. You can find that here: [swiftui-log.md](swiftui-log.md)
+
 ## Progress
 | Type           | Amount | Completed % |
 | :---           | :---:  |    :---:    |
