@@ -25,7 +25,13 @@ struct ContentView: View {
         DrawingView("Stroke border support", view: StrokeBorderSupport()),
         DrawingView("CGAffineTransform (flower)", view: CGAffineTransformView()),
         DrawingView("ImagePaint", view: ImagePaintView()),
-        DrawingView("DrawingGroupView", view: DrawingGroupView())
+        DrawingView("Drawing groups", view: DrawingGroupView()),
+        DrawingView("Special effect: Multiply blend mode", view: MultiplyBlendModeView()),
+        DrawingView("Special effect: Color circles", view: ColorCircleView()),
+        DrawingView("Special effect: Blur and saturation", view: BlurSaturationView()),
+        DrawingView("Animating shapes", view: AnimatingShapesView()),
+        DrawingView("Animating complex shapes", view: AnimatingComplexShapesView()),
+        DrawingView("Spirograph", view: SpirographView())
     ]
     
     var body: some View {

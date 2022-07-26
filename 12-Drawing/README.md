@@ -14,6 +14,9 @@
 * CGAffineTransform
 * ImagePaint
 * drawingGroup()
+* Blend modes
+* animatableData
+* AnimatablePair
 
 ## Challenges
 
