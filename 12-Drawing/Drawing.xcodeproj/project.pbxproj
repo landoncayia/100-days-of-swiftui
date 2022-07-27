@@ -23,6 +23,8 @@
 		C75691B32879BFAE003F25AE /* PathView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75691B22879BFAE003F25AE /* PathView.swift */; };
 		C75691B52879C27A003F25AE /* ShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75691B42879C27A003F25AE /* ShapeView.swift */; };
 		C75691B72879C60E003F25AE /* StrokeBorderSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75691B62879C60E003F25AE /* StrokeBorderSupport.swift */; };
+		C7E3D0A628917FA20008956E /* ArrowChallengeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E3D0A528917FA20008956E /* ArrowChallengeView.swift */; };
+		C7E3D0A82891878C0008956E /* ColorCyclingRectangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E3D0A72891878C0008956E /* ColorCyclingRectangleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		C75691B22879BFAE003F25AE /* PathView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathView.swift; sourceTree = "<group>"; };
 		C75691B42879C27A003F25AE /* ShapeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeView.swift; sourceTree = "<group>"; };
 		C75691B62879C60E003F25AE /* StrokeBorderSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrokeBorderSupport.swift; sourceTree = "<group>"; };
+		C7E3D0A528917FA20008956E /* ArrowChallengeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrowChallengeView.swift; sourceTree = "<group>"; };
+		C7E3D0A72891878C0008956E /* ColorCyclingRectangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCyclingRectangleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,8 @@
 			children = (
 				C75691A42879BE83003F25AE /* DrawingApp.swift */,
 				C75691A62879BE83003F25AE /* ContentView.swift */,
+				C7E3D0A72891878C0008956E /* ColorCyclingRectangleView.swift */,
+				C7E3D0A528917FA20008956E /* ArrowChallengeView.swift */,
 				C70078E528903CF7009EE7B7 /* SpirographView.swift */,
 				C70078E12890356C009EE7B7 /* AnimatingShapesView.swift */,
 				C70078E3289037DF009EE7B7 /* AnimatingComplexShapesView.swift */,
@@ -177,12 +183,14 @@
 			files = (
 				C75691B32879BFAE003F25AE /* PathView.swift in Sources */,
 				C7025719288EF56300DC2049 /* ImagePaintView.swift in Sources */,
+				C7E3D0A82891878C0008956E /* ColorCyclingRectangleView.swift in Sources */,
 				C75691A72879BE83003F25AE /* ContentView.swift in Sources */,
 				C7025717288EE92300DC2049 /* CGAffineTransformView.swift in Sources */,
 				C75691B72879C60E003F25AE /* StrokeBorderSupport.swift in Sources */,
 				C70078DE28903461009EE7B7 /* BlurSaturationView.swift in Sources */,
 				C70078DC28903136009EE7B7 /* ColorCircleView.swift in Sources */,
 				C70078E628903CF7009EE7B7 /* SpirographView.swift in Sources */,
+				C7E3D0A628917FA20008956E /* ArrowChallengeView.swift in Sources */,
 				C70078E22890356C009EE7B7 /* AnimatingShapesView.swift in Sources */,
 				C702571B288EF7B500DC2049 /* DrawingGroupView.swift in Sources */,
 				C70078E028903501009EE7B7 /* MultiplyBlendModeView.swift in Sources */,

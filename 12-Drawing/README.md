@@ -20,18 +20,21 @@
 
 ## Challenges
 
-Challenges will go here eventually, if there are any for this project.
+1. Create an `Arrow` shape - having it point straight up is fine. This could be a rectangle/triangle-style arrow, or perhaps three lines, or maybe something else depending on what kind of arrow you want to draw.
+2. Make the line thickness of your `Arrow` shape animatable.
+3. Create a `ColorCyclingRectangle` shape that is the rectangular cousin of `ColorCyclingCircle`, allowing us to control the position of the gradient using one or more properties. 
 
 ## Screenshots
 
-### Base app
+### Challenges 1 & 2
 
-Screenshots will go here eventually.
+<p float="left">
+    <img src="screenshots/drawing01.png" alt="Drawing Challenge Picture 1" width="341">
+    <img src="screenshots/drawing02.png" alt="Drawing Challenge Picture 2" width="341">
+</p>
 
-<!--<p float="left">-->
-<!--    <img src="screenshots/drawing01.png" alt="Drawings Base Picture 1" width="341">-->
-<!--</p>-->
+### Challenge 3
 
-### Challenges
-
-Screenshots will go here eventually.
+<p float="left">
+    <img src="screenshots/drawing03.png" alt="Drawing Challenge Picture 3" width="341">
+</p>

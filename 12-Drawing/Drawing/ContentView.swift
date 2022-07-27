@@ -31,7 +31,9 @@ struct ContentView: View {
         DrawingView("Special effect: Blur and saturation", view: BlurSaturationView()),
         DrawingView("Animating shapes", view: AnimatingShapesView()),
         DrawingView("Animating complex shapes", view: AnimatingComplexShapesView()),
-        DrawingView("Spirograph", view: SpirographView())
+        DrawingView("Spirograph", view: SpirographView()),
+        DrawingView("Challenge 1", view: ArrowChallengeView()),
+        DrawingView("Challenge 3", view: ColorCyclingRectangleView())
     ]
     
     var body: some View {
