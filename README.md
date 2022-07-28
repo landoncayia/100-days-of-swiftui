@@ -12,7 +12,7 @@ I am also logging my accomplishments, struggles, and impressions in my log file.
 | :---           | :---:  |    :---:    |
 | Checkpoints    | 9 /  9 |    100%     |
 | Projects       | 9 / 19 |   47.4%     |
-| Milestones     | 2 /  6 |   33.3%     |
+| Milestones     | 3 /  6 |   50.0%     |
 | Challenge Days | 1 /  1 |    100%     |
 
 *Update 7/25/2022: I took a short break for personal reasons, but I am back and ready to begin learning again!*
@@ -33,4 +33,4 @@ I am also logging my accomplishments, struggles, and impressions in my log file.
 | Project 7: iExpense | UserDefaults, Codable, sheet(), onDelete(), @StateObject, @ObservedObject, @Environment | <p float="left"> <img src="10-iExpense/screenshots/iexpense01.png" alt="iExpense Picture" width="150"> </p> |
 | Project 8: Moonshot | NavigationLink, GeometryReader, ScrollView, Codable, Resizing images, Grid layouts | <p float="left"> <img src="11-Moonshot/screenshots/moonshot01.png" alt="Moonshot Picture" width="150"> </p> |
 | Project 9: Drawing | Paths, shapes, insettable shapes, CGAffineTransform, ImagePaint, drawingGroup(), Blend modes, animatableData, AnimatablePair | <p float="left"> <img src="12-Drawing/screenshots/drawing03.png" alt="Drawing Picture" width="150"> </p> |
-
+| Milestone Project 3: Habit Tracker | Review of topics covered so far | Screenshots coming soon. |
