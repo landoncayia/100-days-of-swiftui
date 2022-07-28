@@ -12,10 +12,10 @@ struct Habit: Identifiable {
     var id = UUID()
     let title: String
     let description: String
-    
     var numCompletions: Int
+    var showGradient = false
     
-    var titleStyle: Color {
+    var color: Color {
         switch numCompletions {
         case ..<7:
             return .red
@@ -27,8 +27,6 @@ struct Habit: Identifiable {
             return .green
         case 30..<365:
             return .blue
-        case 365...:
-            return .indigo
         default:
             // Should never happen
             return .cyan

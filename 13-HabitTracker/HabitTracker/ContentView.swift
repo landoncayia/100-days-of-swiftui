@@ -28,8 +28,26 @@ struct ContentView: View {
                             
                             Spacer()
                             
-                            Text(habit.numCompletions, format: .number)
-                                .foregroundColor(.red)
+                            if habit.numCompletions < 365 {
+                                Text(habit.numCompletions, format: .number)
+                                    .foregroundColor(habit.color)
+                            } else {
+                                Text(habit.numCompletions, format: .number)
+                                    .padding(3)
+                                    .foregroundColor(.white)
+                                    .background(
+                                        LinearGradient(
+                                            gradient: Gradient(colors: [
+                                                Color(red: 0.875, green: 0.741, blue: 0.412),
+                                                Color(red: 0.573, green: 0.435, blue: 0.204),
+                                                Color(red: 0.91, green: 0.812, blue: 0.576)
+                                            ]),
+                                            startPoint: .top,
+                                            endPoint: .bottom
+                                        )
+                                    )
+                                    .cornerRadius(5)
+                            }
                         }
                     }
                 }
@@ -59,7 +77,7 @@ struct ContentView: View {
     }
     
     func addSampleHabits() {
-        let sampleHabit1 = Habit(title: "Go for a walk", description: "At least 10 minutes should do.", numCompletions: 10)
+        let sampleHabit1 = Habit(title: "Go for a walk", description: "At least 10 minutes should do.", numCompletions: 35)
         let sampleHabit2 = Habit(title: "Take vitamins", description: "Be sure to get them all!", numCompletions: 5)
         let sampleHabit3 = Habit(title: "Read Bible", description: "Your relationship with God is important!", numCompletions: 368)
         habitList.habits.append(sampleHabit1)
